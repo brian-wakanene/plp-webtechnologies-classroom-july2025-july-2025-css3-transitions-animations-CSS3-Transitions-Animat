@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Sports Cars Gallery</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vintage Sports Cars</h1>
+    <p>Explore the timeless elegance of classic automobiles</p>
+  </header>
+
+  <main>
+    <!-- Part 1: CSS-only animations for gallery -->
+    <section class="car-gallery">
+      <h2>Our Collection</h2>
+      <div class="gallery">
+        <div class="car-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/1965_Ford_Mustang_Convertible_%281%29.jpg/300px-1965_Ford_Mustang_Convertible_%281%29.jpg" alt="1965 Ford Mustang">
+          <h3>1965 Ford Mustang</h3>
+          <p>A true American icon with bold style.</p>
+        </div>
+        <div class="car-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Jaguar_E-Type_Series_1_3.8_Litre_%281961%29_%2820584416253%29.jpg/300px-Jaguar_E-Type_Series_1_3.8_Litre_%281961%29_%2820584416253%29.jpg" alt="1970 Jaguar E-Type">
+          <h3>1970 Jaguar E-Type</h3>
+          <p>Elegance meets performance.</p>
+        </div>
+        <div class="car-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/1963_Chevrolet_Corvette_%28C2%29_Sting_Ray_Coupe_-_Flickr_-_The_Car_Spy_%281%29.jpg/300px-1963_Chevrolet_Corvette_%28C2%29_Sting_Ray_Coupe_-_Flickr_-_The_Car_Spy_%281%29.jpg" alt="1963 Chevrolet Corvette">
+          <h3>1963 Chevrolet Corvette</h3>
+          <p>The split-window legend.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3: JS-triggered card flip animation -->
+    <section class="feature-section">
+      <h2>Featured Car: 1969 Porsche 911</h2>
+      <button id="flipButton">Flip the Card!</button>
+      <div id="carFlipCard" class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/1969_Porsche_911S_-_Flickr_-_The_Car_Spy_%2810%29.jpg/400px-1969_Porsche_911S_-_Flickr_-_The_Car_Spy_%2810%29.jpg" alt="Porsche 911 Front">
+            <h3>1969 Porsche 911</h3>
+          </div>
+          <div class="flip-card-back">
+            <h3>Details</h3>
+            <p>Engine: 2.0L Flat-6<br>Power: 130 hp<br>Top Speed: 130 mph</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3: JS-triggered modal popup -->
+    <section class="modal-section">
+      <h2>Learn More</h2>
+      <button id="openModal">View Car Details</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>1967 Shelby Cobra</h2>
+          <p>A legendary roadster with raw power and style.</p>
+          <p>Engine: 7.0L V8<br>Power: 425 hp<br>Top Speed: 165 mph</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vintage Sports Cars. All rights reserved.</p>
+  </footer>
+
+  <script src="Scripts/script.js"></script>
+</body>
+</html>
